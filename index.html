@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costumes de leitura</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/book.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Montagu+Slab:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <h1>Como é a sua relação com livros</h1>
+    </header>
+    <main class="maybe">
+        <section class="form">
+            <form action="/cadastro" method="POST">
+            <div>
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" id="name" placeholder="Gabriella de Sousa Faria">
+            </div>
+            <div>
+            <label for="number">Número:</label>
+            <input type="text" name="number" id="number" placeholder="(xx) 9xxxx-xxxx">
+            </div>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="text" name="mail" id="mail" placeholder="contact@exemple.com">
+                </div>
+            <input type="checkbox" id="lembrar" class="check-lembrar">
+            <label for="lembrar">Receber notificações</label>
+         </form> 
+        </section>
+        <section class="checkbox-maybe">
+            <input type="checkbox" id="ler" class="none">
+            <label for="ler" class="ler-label" id="noni">Você gosta de ler?</label>
+        </section>
+        <section class="checkbox-maybe">
+            <p class="sec">Seleciona livros pela capa?</p>
+            <div class="selection">
+                <div>
+                <input type="radio" name="like" id="yes" class="none">
+                <label for="yes" name="like" class="capa-label" id="noni">Sim</label>
+                </div>
+                <div>
+                <input type="radio" name="like" id="no" class="none">
+                <label for="no" name="capa" class="capa-label" id="noni">Não</label>
+                </div>
+            </div>
+        </section>
+        <p>Música enquanto lê?</p>
+        <section class="power">
+            <input type="checkbox" id="powerb" class="none">
+            <label for="powerb" class="switch"></label>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
