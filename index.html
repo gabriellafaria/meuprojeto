@@ -13,27 +13,31 @@
 </head>
 <body>
     <header>
-        <h1>Como é a sua relação com livros</h1>
+        <h1>Qual é a sua relação com livros?</h1>
     </header>
-    <main class="maybe">
+    <aside class="aform">
         <section class="form">
             <form action="/cadastro" method="POST">
             <div>
             <label for="name">Nome:</label>
-            <input type="text" name="nome" id="name" placeholder="Gabriella de Sousa Faria">
+            <input type="text" name="nome" id="name" placeholder="Gabriella de Sousa Faria" class="iform">
             </div>
             <div>
             <label for="number">Número:</label>
-            <input type="text" name="number" id="number" placeholder="(xx) 9xxxx-xxxx">
+            <input type="text" name="number" id="number" placeholder="(xx) 9xxxx-xxxx" class="iform">
             </div>
             <div>
                 <label for="mail">Email:</label>
-                <input type="text" name="mail" id="mail" placeholder="contact@exemple.com">
+                <input type="text" name="mail" id="mail" placeholder="meuemail@exemplo.com" class="iform">
                 </div>
-            <input type="checkbox" id="lembrar" class="check-lembrar">
-            <label for="lembrar">Receber notificações</label>
+            <input type="checkbox" id="notify" class="none">
+            <label for="notify" id="noni" class="ler-label">Receber notificações</label>
          </form> 
+         <img src="./img/books.png" alt="imagem de livros" class="img1">
         </section>
+    </aside>
+    <main class="maybe">
+        
         <section class="checkbox-maybe">
             <input type="checkbox" id="ler" class="none">
             <label for="ler" class="ler-label" id="noni">Você gosta de ler?</label>
@@ -49,12 +53,31 @@
                 <input type="radio" name="like" id="no" class="none">
                 <label for="no" name="capa" class="capa-label" id="noni">Não</label>
                 </div>
+                <div>
+                <input type="radio" name="like" id="may" class="none">
+                <label for="may" name="capa" class="capa-label" id="noni">Talvez</label>
+                </div>
             </div>
         </section>
         <p>Música enquanto lê?</p>
         <section class="power">
             <input type="checkbox" id="powerb" class="none">
             <label for="powerb" class="switch"></label>
+        </section>
+        <section class="genre">
+            <label for="genre">Selecione o seu gênero favorito:</label>
+            <select name="genre" id="genre" class="sgenere">
+                <option value="choise" selected disabled>Gêneros</option>
+                <option value="fantasy">Fantasia</option>
+                <option value="fc">Ficção Científica</option>
+                <option value="fl">Ficção Literária</option>
+                <option value="horror">Horror</option>
+                <option value="nof">Não-Ficção</option>
+                <option value="poetry">Poesia</option>
+                <option value="romance">Romance</option>
+                <option value="thriller">Suspensse</option>
+                <option value="other" class="others">Outro</option>
+            </select>
         </section>
     </main>
     <footer>
